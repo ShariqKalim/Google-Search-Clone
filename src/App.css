@@ -1,38 +1,220 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.header_home {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  margin: 25px;
+  cursor: pointer;
+}
+.header_home a {
+  text-decoration: none;
+  color: rgb(77, 74, 74);
+  font-size: 14px;
+}
+.search_button_main {
+  border: 1px solid rgba(13, 13, 13, 0.132);
+  width: 37vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 50px;
+
+  margin-bottom: 30px;
+}
+.search_button_main input {
+  width: 32vw;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.search_main img {
+  width: 310px;
+  margin-bottom: 30px;
+}
+.search_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+  flex-direction: column;
+}
+.after_search {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.after_search a {
+  width: 140px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  background-color: rgba(184, 183, 183, 0.086);
+  color: rgb(28, 11, 11);
+  text-decoration: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.after_search a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.128);
+}
+.lang {
+  color: blue;
+  font-size: 14px;
+}
+.header_home a:hover {
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  margin-top: 40px;
+  width: 97vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.sub_header {
+  display: flex;
+  width: 55vw;
+  justify-content: space-around;
+}
+.Header img {
+  width: 130px;
+  height: 44px;
+}
+.search_bar {
+  width: 40vw;
+  padding: 11px;
+  height: 25px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.144);
+  border-radius: 50px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.search_bar input {
+  width: 35vw;
+  height: 20px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+.after_search_bar {
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.material_icons {
+  color: rgba(83, 81, 81, 0.887);
+  cursor: pointer;
+}
+.after_search_bar_links div {
+  display: flex;
+}
+.after_search_bar_links div a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+.after_search_bar_links div a:hover {
+  border-bottom: 2px solid blue;
+}
+.after_search_bar_links {
+  margin: 30px 0px 10px 190px;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.the_line {
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.272);
+}
+.search_results {
+  width: 35vw;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.search_results a {
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.search_results p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.sub_search_results img {
+  width: 25px;
+  height: 25px;
+  /* border-radius: 100px; */
+}
+.sub_search_results {
+  line-height: 10px;
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.result_time {
+  margin-left: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+#toHide{
+  display: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer{
+  display: block;
+  margin: auto;
+  width: 100vw;
+  position: absolute;
+  top: 85%;
+  text-align: center;
+  font-family: 'Nunito';
+}
+@media only screen and (max-width: 825px) {
+  .search_button_main {
+    width: 80vw;
   }
-  to {
-    transform: rotate(360deg);
+  .search_main img {
+    width: 80vw;
+  }
+  .Header,
+  .sub_header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search_bar {
+    margin: 10px 0px 10px 0px;
+    width: 85vw;
+  }
+  .search_bar input {
+    width: 100vw;
+  }
+  .after_search_bar .material_icons {
+    display: none;
+  }
+  .after_search_bar_links {
+    width: 90vw;
+    display: flex;
+    margin: auto;
+  }
+  .the_line {
+    margin-bottom: 10px;
+  }
+  .search_results {
+    width: 80vw;
+    display: block;
+    margin: auto;
+  }
+  .result_time {
+    margin-left: 35px;
+  }
+  .search_button_main input{
+    width: 60vw;
   }
 }
