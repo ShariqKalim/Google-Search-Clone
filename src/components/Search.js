@@ -44,7 +44,7 @@ const Search = () => {
               <img src="images/logo.png" alt="logo" />
             </a>
             <div className="search_bar">
-              <input type="text" onChange={(e) => setData(e.target.value)} />
+              <input type="text" placeholder={data} onChange={(e) => setData(e.target.value)} />
               <SearchIcon className="material_icons" />
             </div>
           </div>
@@ -91,7 +91,7 @@ const Search = () => {
                 />
                 <p>{obj.displayLink}</p>
               </div>
-              <a href={obj.link}>{obj.title}</a>
+              <a target="_blank" href={obj.link}>{obj.title}</a>
               <p>{obj.snippet}</p>
             </div>
            
